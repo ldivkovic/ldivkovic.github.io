@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+		#stunde {width: 10px;}
+ 
+			table, th, td, tr { width: 450px; height: 10px;border:  solid white 2px;font-family: arial, sans-serif;color: black; border-collapse: collapse;text-align: center; border-radius:2px;}
+		tr, td {background-color:DarkOrange;}
+		th { background-color:DarkGrey;}
+		h1 {color:black; font-family: arial, sans-serif}
+			
+td:hover {background-color: Gold;}
+
+ 
+</style>
+
+<script>
+    const showInformation = () => {
+        console.log('sdfsfdsf')
+        const lesson = document.getElementById('unco')
+        lesson.innerHTML =
+            '3BHAK HIRSCHBICHLER <button class="button" onclick="closeInformation()">[-]</button>'
+    }
+    const closeInformation = () => {
+        const lesson = document.getElementById('unco')
+        lesson.innerHTML = '<div onclick="showInformation()">UNCO</div>'
+        console.log(lesson.innerHTML)
+    }
+</script>
+
+    <meta charset="UTF-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   
+    <link rel="stylesheet" href="../../stupla.css">
+    <title>Webuntis</title>
+    
+
+    
+    </head>
+    
+    <body>
+    
+        <h1>Tabellen-wiederholung</h1>
+    <p>Hier kommt ihr zum Schüler vor mir <a id="zurueck" href="../../miriambuchner/stupla">Miriam Buchner</a></p> 
+    <p>Hier kommt ihr zum Schüler nach mir <a id="vorne" href="../../lenaeckstein/stupla">Lena Eckstein</a></p> 
+
+
+        <table>
+    
+            <tr>
+   
+                <th style="border: 1px solid black;">Stunde</th>
+                <th style="border: 1px solid black;">Montag</th>
+                <th style="border: 1px solid black;">Dienstag</th>
+                <th style="border: 1px solid black;">Mittwoch</th>
+                <th style="border: 1px solid black;">Donnerstag</th>
+                <th style="border: 1px solid black;">Freitag</th>
+   
+            </tr>
+    
+            <tr style="border: 1px solid black;" onmouseover="document.getElementById('zeiten').innerHTML='7:40'"></tr>
+            <td style="border: 1px solid black;" class="stunden" onclick="">7:40</td>
+            <td style="border: 1px solid black;" id="unco" onclick="showInformation()">UNCO</td>
+            <td style="border: 1px solid black;">ENWS</td>
+            <td style="border: 1px solid black;">GEO</td>
+            <td style="border: 1px solid black;">BW</td>
+            <td style="border: 1px solid black;">D</td>
+        </tr>
+    
+            <tr style="border: 1px solid black;">
+    
+                <td style="border: 1px solid black;">8:35</td>
+    
+                <td style="border: 1px solid black;">ETH</td>
+    
+                <td style="border: 1px solid black;">MAM</td>
+    
+                <td style="border: 1px solid black;">ENWS</td>
+    
+                <td style="border: 1px solid black;">APR</td>
+    
+                <td style="border: 1px solid black;">ENWS</td>
+    
+            </tr>
+    
+            <tr style="border: 1px solid black;">
+    
+                <td style="border: 1px solid black;">9:40</td>
+    
+                <td style="border: 1px solid black;">BW</td>
+    
+                <td style="border: 1px solid black;">APR</td>
+    
+                <td style="border: 1px solid black;">APR</td>
+    
+                <td style="border: 1px solid black;" class ="unco">UNCO</td>
+    
+                <td style="border: 1px solid black;">BESPK</td>
+    
+            </tr>
+    
+            <tr style="border: 1px solid black;">
+    
+                <td style="border: 1px solid black;">10:35</td>
+    
+                <td style="border: 1px solid black;">BW</td>
+    
+                <td style="border: 1px solid black;">NW3</td>
+    
+                <td style="border: 1px solid black;">OMAI</td>
+    
+                <td style="border: 1px solid black;">MAM</td>
+    
+                <td style="border: 1px solid black;">BESPK</td>
+    
+            </tr>
+    
+            <tr style="border: 1px solid black;">
+    
+                <td style="border: 1px solid black;">11:30</td>
+    
+                <td style="border: 1px solid black;">GEO</td>
+    
+                <td style="border: 1px solid black;">D</td>
+    
+                <td style="border: 1px solid black;">ETH</td>
+    
+                <td style="border: 1px solid black;">WIDS</td>
+    
+                <td style="border: 1px solid black;" class="imcm">IMCM</td>
+    
+            </tr>
+    
+            <tr style="border: 1px solid black;">
+    
+                <td style="border: 1px solid black;">12:20</td>
+    
+                <td style="border: 1px solid black;">WIDS</td>
+    
+                <td style="border: 1px solid black;">PBGW</td>
+    
+                <td style="border: 1px solid black;">CRW</td>
+    
+                <td style="border: 1px solid black;">NW3</td>
+    
+                <td style="border: 1px solid black;">OMAI</td>
+    
+            </tr>
+    
+            <tr style="border: 1px solid black;">
+    
+                <td style="border: 1px solid black;">14:30</td>
+    
+                <td style="border: 1px solid black;">BB2</td>
+    
+                <td style="border: 1px solid black;">----</td>
+    
+                <td style="border: 1px solid black;">D</td>
+    
+                <td style="border: 1px solid black;">----</td>
+    
+                <td style="border: 1px solid black;">----</td>
+    
+            </tr>
+    
+            <tr style="border: 1px solid black;">
+    
+                <td style="border: 1px solid black;">15:20</td>
+    
+                <td style="border: 1px solid black;" class="imcm">IMCM</td>
+    
+                <td style="border: 1px solid black;">----</td>
+    
+                <td style="border: 1px solid black;">D</td>
+    
+                <td style="border: 1px solid black;">----</td>
+    
+                <td style="border: 1px solid black;">----</td>
+    
+            </tr>
+    
+        </table>
+    
+    </body>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
